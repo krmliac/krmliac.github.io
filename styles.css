@@ -24,3 +24,20 @@ hr {
     font-size: 24px;
     text-align: center;
 }
+
+
+
+/* CHATGPT BS BELOW (countdown) */
+
+.countdown-container {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    font-size: 15px;
+    margin-top: 20px;
+    width: 100%; /* Make sure it takes full width */
+}
+.countdown-text {
+    font-size: 15px; /* Adjust size as needed */
+    margin-right: 5px; /* Space between text and countdown */
+}

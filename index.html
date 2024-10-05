@@ -41,6 +41,43 @@
     <p><b>THIS IS MY EP I MADE IT IT'S REALLY GOOD</b></p>
     <iframe style="border: 0; width: 350px; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=2244128605/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://newlifeultraluxe.bandcamp.com/album/witchy-wednesday">witchy wednesday by new life ultraluxe</a></iframe>
 
+    <hr>
 
+
+    <!-- CHATGPT BS BELOW (countdown)-->
+    <div class="countdown-container" id="countdownContainer">
+        <span class="countdown-text">this site will die in </span>
+        <div class="countdown" id="countdown"></div>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        const countdownDate = new Date("October 5, 2025 18:54:00").getTime();
+
+        // Update the countdown every second
+        const countdownFunction = setInterval(() => {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Calculate the distance between now and the countdown date
+            const distance = countdownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // If the countdown is over, write some text
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "it's dead rip";
+            }
+        }, 1000);
+    </script>
+
+    <hr style="border: none; margin: 1px 0;">
 </body>
 </html>
