@@ -1,5 +1,39 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>witchy wednesday</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+
+</head>
+
+
 <body>
-<p>what up chaaat</p>
+    <hr style="border: none; margin: 1px 0;">
+    <!-- IS IT WITCHY WEDNESDAY??? -->
+    <h1><u>IS IT WITCHY WEDNESDAY TODAY??</u></h1>
+    <div class="result" id="result"></div>
+
+    <script>
+        const today = new Date();
+        const dayOfWeek = today.getDay();
+
+        const resultDiv = document.getElementById("result");
+        if (dayOfWeek === 3) {
+            resultDiv.innerText = "diagnosis: YES!!!!";
+        } else {
+            resultDiv.innerText = "diagnosis: NO :(";
+        }
+    </script>
+
+    <hr>
+
+    <!-- the bandcamp link ya -->
+
+    <p><b>THIS IS MY EP I MADE IT IT'S REALLY GOOD</b></p>
+    <iframe style="border: 0; width: 350px; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=2244128605/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://newlifeultraluxe.bandcamp.com/album/witchy-wednesday">witchy wednesday by new life ultraluxe</a></iframe>
+
+
 </body>
 </html>
