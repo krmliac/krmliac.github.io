@@ -29,6 +29,8 @@
         const resultDiv = document.getElementById("result");
         if (dayOfWeek === 3) {
             resultDiv.innerText = "diagnosis: YES!!!!";
+        } else if (dayOfWeek === 4) {
+            resultDiv.innerHTML = "diagnosis: no BUT IT'S <i>WITCHY THURSDAY!!!</i>";
         } else {
             resultDiv.innerText = "diagnosis: NO :(";
         }
